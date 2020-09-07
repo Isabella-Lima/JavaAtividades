@@ -64,9 +64,6 @@ public class Calculadora extends javax.swing.JFrame {
         lblValorDiarioSU = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         lblValorFinalCU = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        lblDia = new javax.swing.JLabel();
-        lblValorFreq = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         lblValorMesCU = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -80,10 +77,10 @@ public class Calculadora extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 0));
         jLabel4.setText("Calculadora Financeira");
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 0));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setForeground(new java.awt.Color(255, 204, 51));
         jPanel1.setPreferredSize(new java.awt.Dimension(7, 550));
 
@@ -91,7 +88,7 @@ public class Calculadora extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 792, Short.MAX_VALUE)
+            .addGap(0, 856, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,7 +116,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         comBoxCombustivel.setBackground(new java.awt.Color(255, 255, 255));
         comBoxCombustivel.setForeground(new java.awt.Color(0, 0, 0));
-        comBoxCombustivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escolher...", "Gasolina", "Álcool", "Etanol", " " }));
+        comBoxCombustivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escolher...", "Gasolina", "Álcool", "Diesel", " " }));
 
         comBoxMarca.setBackground(new java.awt.Color(255, 255, 255));
         comBoxMarca.setForeground(new java.awt.Color(0, 0, 0));
@@ -140,7 +137,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         comBoxFreq.setBackground(new java.awt.Color(255, 255, 255));
         comBoxFreq.setForeground(new java.awt.Color(0, 0, 0));
-        comBoxFreq.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escolher...", "Diária", "Semanal", "Mensal" }));
+        comBoxFreq.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escolher...", "Diária", "Mensal", "Anual" }));
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 153, 0));
@@ -152,9 +149,13 @@ public class Calculadora extends javax.swing.JFrame {
 
         jLabel8.setText("Gasto com combustível");
 
+        lblCombustCU.setForeground(new java.awt.Color(0, 0, 0));
+
         jLabel10.setText("Gasto com estacionamento");
 
-        jLabel12.setText("Gasto com estacionamento por mês:");
+        lblEstaciCU.setForeground(new java.awt.Color(0, 0, 0));
+
+        jLabel12.setText("Gasto com estacionamento por dia:");
 
         inpGastoEstacSU.setBackground(new java.awt.Color(255, 255, 255));
         inpGastoEstacSU.setForeground(new java.awt.Color(0, 0, 0));
@@ -163,43 +164,49 @@ public class Calculadora extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(204, 0, 0));
         jLabel13.setText("*caso não houver digite 0");
 
-        jLabel9.setText(" por mês:");
+        jLabel9.setText("ao mês:");
 
         jLabel11.setText("por mês:");
 
         jLabel14.setText("Gasto com combustível");
 
+        lblCombustSU.setForeground(new java.awt.Color(0, 0, 0));
+
         jLabel15.setText("Gasto com estacionamento");
 
-        jLabel16.setText(" por mês:");
+        lblEstaciSU.setForeground(new java.awt.Color(0, 0, 0));
+
+        jLabel16.setText("ao mês");
 
         jLabel17.setText("por mês:");
 
         jLabel18.setText("Preço corrida:");
+
+        lblValorCorriCU.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel19.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 0, 0));
         jLabel19.setText("Valor final diário");
 
         lblValorDiarioSU.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        lblValorDiarioSU.setForeground(new java.awt.Color(255, 255, 255));
+        lblValorDiarioSU.setForeground(new java.awt.Color(204, 0, 0));
 
         jLabel20.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 0, 0));
         jLabel20.setText("Valor final diário");
 
         lblValorFinalCU.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        lblValorFinalCU.setForeground(new java.awt.Color(255, 255, 255));
-
-        jLabel21.setText("Valor ");
-
-        lblValorFreq.setForeground(new java.awt.Color(255, 255, 255));
+        lblValorFinalCU.setForeground(new java.awt.Color(204, 0, 0));
 
         jLabel22.setText("Valor por mês:");
 
         jLabel23.setText("Valor anual:");
 
+        lblValorMesSU.setForeground(new java.awt.Color(0, 0, 0));
+
         jLabel24.setText("Valor anual:");
+
+        lblValorAnualSU.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel25.setText("Valor por mês:");
 
@@ -210,15 +217,6 @@ public class Calculadora extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(jLabel4)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,21 +247,19 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(lblEstaciSU, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblValorDiarioSU, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(89, 89, 89))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel25)
+                                    .addComponent(jLabel19)
                                     .addComponent(lblValorMesSU, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel24)
-                                    .addComponent(lblValorAnualSU, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(135, 135, 135))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel19)
-                                .addGap(51, 51, 51))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblValorDiarioSU, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(89, 89, 89)))))
+                                    .addComponent(lblValorAnualSU, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(54, 54, 54)))))
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -273,41 +269,44 @@ public class Calculadora extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblCombustCU, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel10)
                                     .addComponent(jLabel8)
                                     .addComponent(jLabel9)
                                     .addComponent(jLabel11)
-                                    .addComponent(lblEstaciCU, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap())
+                                    .addComponent(lblCombustCU, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblValorCorriCU, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblEstaciCU, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel18)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel21)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblDia, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(lblValorFreq, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblValorCorriCU, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel22)
-                                            .addComponent(lblValorMesCU, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel23)
-                                            .addComponent(lblValorAnualCU, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblValorFinalCU, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(54, 54, 54))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabel20)
-                                        .addGap(27, 27, 27))))))))
+                                        .addComponent(lblValorFinalCU, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(33, 33, 33))
+                                    .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(lblValorMesCU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel23)
+                                        .addComponent(lblValorAnualCU, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(37, 37, 37))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel26)
                 .addGap(279, 279, 279))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(285, 285, 285)
+                        .addComponent(jLabel4)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -337,13 +336,13 @@ public class Calculadora extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblCombustSU, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(lblCombustSU, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel17)
                                 .addGap(18, 18, 18)
-                                .addComponent(lblEstaciSU, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(lblEstaciSU, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(9, 9, 9)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -355,7 +354,9 @@ public class Calculadora extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblValorDiarioSU, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(lblValorDiarioSU, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel25)))
                         .addGap(3, 3, 3)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -368,56 +369,45 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(8, 8, 8)
-                                .addComponent(jLabel25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(lblValorMesSU, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel24)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblValorAnualSU, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblValorAnualSU, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel7)
-                        .addGap(35, 35, 35)
+                        .addGap(54, 54, 54)
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblCombustCU, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(lblCombustCU, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel11)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblEstaciCU, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel18)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblValorCorriCU, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel21)
-                                    .addComponent(lblDia, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
+                                .addGap(52, 52, 52)
                                 .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblValorFinalCU, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblValorFinalCU, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(lblValorFreq, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(39, 39, 39)
                                 .addComponent(jLabel22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblValorMesCU, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel23)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblValorAnualCU, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblEstaciCU, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(lblValorAnualCU, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jLabel18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblValorCorriCU, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel26)
                 .addContainerGap(53, Short.MAX_VALUE))
@@ -504,9 +494,8 @@ public class Calculadora extends javax.swing.JFrame {
         } else if (combustivelSelecionado.equals("Álcool")) {
             valorCombPorLitro = 2.8;
             
-        } else if (combustivelSelecionado.equals("Etanol")) {
-            valorCombPorLitro = 2.7;
-            
+        } else if (combustivelSelecionado.equals("Diesel")) {
+            valorCombPorLitro = 3.5;   
         }
         
         
@@ -552,50 +541,69 @@ public class Calculadora extends javax.swing.JFrame {
         
         ////////////////////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
-        //////////////////////////////RESULTADOS////////////////////////////////
+        //////////////////////RESULTADOS SEM A UBER/////////////////////////////
         ////////////////////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////                                                 
         
         
         /*CALCULANDO E PRINTANDO QUAL SERÁ O GASTO COM COMBUSTÍVEL*/ 
+        //EXEMPLO: 1 KM POR DIA
            
-            
+                                     //14.4       //14.4
         Double litrosNecessarios = (distanciaKm / kmporlitro);
-        Double gastoCombSU = (litrosNecessarios * valorCombPorLitro);
-        Double gastoCombPorFreqSU = (gastoCombSU * frequenciaRota);
+        Double gastoCombSU = (litrosNecessarios * valorCombPorLitro);//4.6
+        Double gastoCombPorFreqSU = 0.0;
         
         
-        lblCombustSU.setText(String.valueOf(gastoCombPorFreqSU));
+        
+        if (frequenciaRota == 365) {
+             gastoCombPorFreqSU = (((gastoCombSU * 365))/12);//139.9
+            lblCombustSU.setText(String.valueOf(String.format("R$ %.2f ",gastoCombPorFreqSU)));
+            lblEstaciSU.setText(String.valueOf(String.format("R$ %.2f ",(gastoEstSU)*30)));
+            
+        }else if (frequenciaRota == 12){
+            gastoCombPorFreqSU = ((gastoCombSU * 12));//55.2
+            lblCombustSU.setText(String.valueOf(String.format("R$ %.2f ",gastoCombPorFreqSU)));
+            lblEstaciSU.setText(String.valueOf(String.format("R$ %.2f ",(gastoEstSU)*1)));
+            
+        }else if (frequenciaRota == 1) {
+             gastoCombPorFreqSU = (gastoCombSU * 1);//4.6
+            lblCombustSU.setText(String.valueOf(String.format("R$ %.2f ",gastoCombPorFreqSU)));
+            lblEstaciSU.setText(String.valueOf(String.format("R$ %.2f ",(gastoEstSU)*1)));
+        }
+            
         
               
         ////////////////////////////////////////////////////////////////////////
         
         /*CALCULANDO E PRINTANDO QUAL SERÁ O GASTO COM ESTACIONAMENTO*/ 
             
-        Double gastoEstSUFreq = (gastoEstSU * frequenciaRota);
+//        Double gastoEstSUFreq = (gastoEstSU * 365);
+//        Double vFinal = ((gastoEstSUFreq/12));
         
-        lblEstaciSU.setText(String.valueOf(gastoEstSUFreq));
-        
+
+//        lblEstaciSU.setText(String.valueOf(String.format("R$ %.2f ",gastoEstSU)));
+       
         
         ////////////////////////////////////////////////////////////////////////
         //Valor diário
         
         Double valorDiarioSU = (gastoCombSU + gastoEstSU);
         
-        lblValorDiarioSU.setText(String.valueOf(valorDiarioSU));
+        lblValorDiarioSU.setText(String.valueOf(String.format("R$ %.2f ",valorDiarioSU)));
         
         
         ////////////////////////////////////////////////////////////////////////
         //Valor Mensal
         switch (frequenciaRota) {
             case 1:
-                lblValorMesSU.setText(String.valueOf(valorDiarioSU / 365));
+                lblValorMesSU.setText(String.valueOf(String.format("R$ %.2f ",(valorDiarioSU / 365))));
                 break;
             case 12:
-                lblValorMesSU.setText(String.valueOf(valorDiarioSU * 1));
+                lblValorMesSU.setText(String.valueOf(String.format("R$ %.2f ",(valorDiarioSU * 1))));
                 break;
             case 365:
-                lblValorMesSU.setText(String.valueOf(valorDiarioSU * 30));
+                lblValorMesSU.setText(String.valueOf(String.format("R$ %.2f ", (valorDiarioSU * 30))));
                 break;
             default:
                 break;
@@ -606,23 +614,51 @@ public class Calculadora extends javax.swing.JFrame {
         //Valor Anual
         switch (frequenciaRota) {
             case 1:
-                lblValorAnualSU.setText(String.valueOf(valorDiarioSU * 1));
+                lblValorAnualSU.setText(String.valueOf(String.format("R$ %.2f ",(valorDiarioSU * 1))));
                 break;
             case 12:
-                lblValorAnualSU.setText(String.valueOf(valorDiarioSU * 12));
+                lblValorAnualSU.setText(String.valueOf(String.format("R$ %.2f ",(valorDiarioSU * 12))));
                 break;
             case 365:
-                lblValorAnualSU.setText(String.valueOf(valorDiarioSU * 365));
+                lblValorAnualSU.setText(String.valueOf(String.format("R$ %.2f ",(valorDiarioSU * 365))));
                 break;
             default:
                 break;
         }
+        
 
-
+        ////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////
+        //////////////////////RESULTADOS COM A UBER/////////////////////////////
+        ////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////   
+        
+        //Valor gasto com gasolinha pré setado já como 0.
+        lblCombustCU.setText("R$ 0");
         
         
+        //Valor gasto com estacionamento por mês pré setado já como 0.
+        lblEstaciCU.setText("R$ 0");
+        
+        //Valor gasto com a corrida
         
         
+        Double valorCorrida = (0.75 * valorDiarioSU);
+        lblValorCorriCU.setText(String.valueOf(String.format("R$ %.2f ",valorCorrida)));
+        
+        
+        //Valor diário com uber
+               
+        lblValorFinalCU.setText(String.valueOf(String.format("R$ %.2f ",valorCorrida)));
+        
+       //Valor por mês com a uber
+       lblValorMesCU.setText(String.valueOf(String.format("R$ %.2f ",(valorCorrida*30))));
+        
+       
+       //Valor por ano com a uber
+       lblValorAnualCU.setText(String.valueOf(String.format("R$ %.2f ",(valorCorrida*365))));
+       
+       
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
@@ -680,7 +716,6 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -697,7 +732,6 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblCombustCU;
     private javax.swing.JLabel lblCombustSU;
-    private javax.swing.JLabel lblDia;
     private javax.swing.JLabel lblEstaciCU;
     private javax.swing.JLabel lblEstaciSU;
     private javax.swing.JLabel lblValorAnualCU;
@@ -705,7 +739,6 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JLabel lblValorCorriCU;
     private javax.swing.JLabel lblValorDiarioSU;
     private javax.swing.JLabel lblValorFinalCU;
-    private javax.swing.JLabel lblValorFreq;
     private javax.swing.JLabel lblValorMesCU;
     private javax.swing.JLabel lblValorMesSU;
     // End of variables declaration//GEN-END:variables
